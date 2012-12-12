@@ -675,7 +675,7 @@ define(['signals'], function (signals) {
 });
 }(typeof define === 'function' && define.amd ? define : function (deps, factory) {
     if (typeof module !== 'undefined' && module.exports) { //Node
-        module.exports = factory(require(deps[0]));
+        module.exports = factory(require('signals'));
     } else {
         /*jshint sub:true */
         window['crossroads'] = factory(window[deps[0]]);
